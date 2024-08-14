@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_learn/views/home_view.dart';
 
-
-
-
 class MyApp extends StatelessWidget {
   const MyApp({
     super.key,
@@ -13,7 +10,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: "Flutter Learn",
-        home: HomeView()
-    );
+        theme: ThemeData(
+          primarySwatch: Colors.deepOrange,
+        ),
+        home: HomeView());
   }
 }
